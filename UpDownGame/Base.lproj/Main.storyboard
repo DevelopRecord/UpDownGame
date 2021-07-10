@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="upr-MX-dHw">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -128,13 +128,93 @@
             </objects>
             <point key="canvasLocation" x="34.821428571428569" y="88.405797101449281"/>
         </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="n7e-dE-FuX">
+            <objects>
+                <viewController id="upr-MX-dHw" customClass="CreditViewController" customModule="UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F32-Kp-4Dk">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YIa-Fj-Tfd">
+                                <rect key="frame" x="224" y="20" width="608" height="374"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Hi Everyone!
+
+It's My First iOS App, 'UpDownGame'
+
+It's a game of numbers in range.
+
+I'm going to keep trying to create a variety of apps.
+
+Well, then have fun!
+
+and, Thank you for using it.
+
+My Contacts:
+
+https://github.com/LeeJHyeok
+
+https://ondevelop.tistory.com
+
+ljh97820@naver.com
+
+010-6801-9567</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RN6-Vz-NG7">
+                                <rect key="frame" x="64" y="20" width="45" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2580" translatesAutoresizingMaskIntoConstraints="NO" id="a4R-4M-QkT">
+                                <rect key="frame" x="64" y="137" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="8EF-Ev-MI2"/>
+                                    <constraint firstAttribute="height" constant="140" id="XSP-ca-4xo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g8G-K6-VX5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YIa-Fj-Tfd" firstAttribute="leading" secondItem="a4R-4M-QkT" secondAttribute="trailing" constant="20" id="8Eo-Vc-7kc"/>
+                            <constraint firstItem="g8G-K6-VX5" firstAttribute="trailing" secondItem="YIa-Fj-Tfd" secondAttribute="trailing" constant="20" id="B1j-Wt-fd5"/>
+                            <constraint firstItem="RN6-Vz-NG7" firstAttribute="top" secondItem="g8G-K6-VX5" secondAttribute="top" constant="20" id="FOf-O1-XYS"/>
+                            <constraint firstItem="a4R-4M-QkT" firstAttribute="leading" secondItem="RN6-Vz-NG7" secondAttribute="leading" id="JIe-sr-nE5"/>
+                            <constraint firstAttribute="bottom" secondItem="YIa-Fj-Tfd" secondAttribute="bottom" constant="20" id="QnM-cW-cZM"/>
+                            <constraint firstItem="RN6-Vz-NG7" firstAttribute="leading" secondItem="g8G-K6-VX5" secondAttribute="leading" constant="20" id="USf-Mu-pYt"/>
+                            <constraint firstItem="YIa-Fj-Tfd" firstAttribute="top" secondItem="g8G-K6-VX5" secondAttribute="top" constant="20" id="rb9-gt-1b9"/>
+                            <constraint firstItem="a4R-4M-QkT" firstAttribute="centerY" secondItem="F32-Kp-4Dk" secondAttribute="centerY" id="sl0-EC-UEB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hj3-m9-iUW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="681.02678571428567" y="88.405797101449281"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="IMG_2580" width="1350" height="1350"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="memories" catalog="system" width="128" height="110"/>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
